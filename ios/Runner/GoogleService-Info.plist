@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>960239116702-6m2b2o1bnqu3qocua167ia8i4h8vu81l.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.960239116702-6m2b2o1bnqu3qocua167ia8i4h8vu81l</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBh3E_1HNPbN5_VgMQ61giRBWDeqLxKihg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>960239116702</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.concettolabs.testapp</string>
+	<key>PROJECT_ID</key>
+	<string>fcmdemo-fc96b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fcmdemo-fc96b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:960239116702:ios:f44da2fc2dc03c2c0ef68f</string>
+</dict>
+</plist>

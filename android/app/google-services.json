@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "960239116702",
+    "project_id": "fcmdemo-fc96b",
+    "storage_bucket": "fcmdemo-fc96b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960239116702:android:2ca9dc123afbd7330ef68f",
+        "android_client_info": {
+          "package_name": "com.concettolabs.testapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960239116702-o0rfrthgskk0apbpllgagmvvis9ud4cm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.concettolabs.testapp",
+            "certificate_hash": "707aa9ef7e83245ee993e24a9f5b11a2536a5f99"
+          }
+        },
+        {
+          "client_id": "960239116702-l6cgpmdmmamf9afehan1v8asdusr8rq7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_iY6Rd5y9Jzi9MlsUvs9m_eJrXDK1DvE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960239116702-l6cgpmdmmamf9afehan1v8asdusr8rq7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "960239116702-6m2b2o1bnqu3qocua167ia8i4h8vu81l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.concettolabs.testapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

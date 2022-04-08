@@ -1,0 +1,4 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/concettolabs/testapp/BuildConfig.java
+ com.concettolabs.testapp.BuildConfig
