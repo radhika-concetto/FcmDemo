@@ -30,5 +30,11 @@
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:960239116702:ios:f44da2fc2dc03c2c0ef68f</string>
+    
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>remote-notification</string>
+        <string>voip</string>
+    </array>
 </dict>
 </plist>

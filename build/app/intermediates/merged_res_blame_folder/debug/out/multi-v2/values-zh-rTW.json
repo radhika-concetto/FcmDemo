@@ -21,6 +21,23 @@
                     }
                 },
                 {
+                    "source": "/Users/concettolabsmacbookair/.gradle/caches/transforms-3/b850557d5d125c25bbae24af291f2712/transformed/core-1.6.0/res/values-zh-rTW/values-zh-rTW.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "20",
+                        "startColumns": "4",
+                        "startOffsets": "1874",
+                        "endColumns": "100",
+                        "endOffsets": "1970"
+                    }
+                },
+                {
                     "source": "/Users/concettolabsmacbookair/.gradle/caches/transforms-3/a4f9f327d23e944b53e1762369cd207e/transformed/jetified-play-services-basement-18.0.0/res/values-zh-rTW/values.xml",
                     "from": {
                         "startLines": "4",
@@ -35,23 +52,6 @@
                         "startOffsets": "919",
                         "endColumns": "102",
                         "endOffsets": "1017"
-                    }
-                },
-                {
-                    "source": "/Users/concettolabsmacbookair/.gradle/caches/transforms-3/da67fac04c9f51cc85340189739a8dc6/transformed/core-1.7.0/res/values-zh-rTW/values-zh-rTW.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "20",
-                        "startColumns": "4",
-                        "startOffsets": "1874",
-                        "endColumns": "100",
-                        "endOffsets": "1970"
                     }
                 }
             ]

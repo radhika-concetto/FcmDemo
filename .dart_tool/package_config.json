@@ -8,12 +8,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "awesome_notifications",
-      "rootUri": "file:///Users/concettolabsmacbookair/RadhikaWorkspace/Flutter%20Project/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/awesome_notifications-0.6.21",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "boolean_selector",
       "rootUri": "file:///Users/concettolabsmacbookair/RadhikaWorkspace/Flutter%20Project/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0",
       "packageUri": "lib/",
@@ -40,6 +34,18 @@
     {
       "name": "collection",
       "rootUri": "file:///Users/concettolabsmacbookair/RadhikaWorkspace/Flutter%20Project/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.15.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "connectycube_flutter_call_kit",
+      "rootUri": "file:///Users/concettolabsmacbookair/RadhikaWorkspace/Flutter%20Project/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/connectycube_flutter_call_kit-2.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "crypto",
+      "rootUri": "file:///Users/concettolabsmacbookair/RadhikaWorkspace/Flutter%20Project/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-3.0.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -122,12 +128,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "intl",
-      "rootUri": "file:///Users/concettolabsmacbookair/RadhikaWorkspace/Flutter%20Project/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/intl-0.17.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "js",
       "rootUri": "file:///Users/concettolabsmacbookair/RadhikaWorkspace/Flutter%20Project/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.3",
       "packageUri": "lib/",
@@ -166,12 +166,6 @@
     {
       "name": "path",
       "rootUri": "file:///Users/concettolabsmacbookair/RadhikaWorkspace/Flutter%20Project/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "platform",
-      "rootUri": "file:///Users/concettolabsmacbookair/RadhikaWorkspace/Flutter%20Project/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/platform-3.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -230,6 +224,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "universal_io",
+      "rootUri": "file:///Users/concettolabsmacbookair/RadhikaWorkspace/Flutter%20Project/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/universal_io-2.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "vector_math",
       "rootUri": "file:///Users/concettolabsmacbookair/RadhikaWorkspace/Flutter%20Project/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.1.1",
       "packageUri": "lib/",
@@ -242,7 +242,7 @@
       "languageVersion": "2.15"
     }
   ],
-  "generated": "2022-04-08T09:23:42.322188Z",
+  "generated": "2022-04-12T06:44:50.935396Z",
   "generator": "pub",
   "generatorVersion": "2.16.2"
 }
