@@ -63,7 +63,7 @@
     },
     {
       "name": "firebase_core",
-      "rootUri": "file:///Users/concettolabsmacbookair/RadhikaWorkspace/Flutter%20Project/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-1.13.1",
+      "rootUri": "file:///Users/concettolabsmacbookair/RadhikaWorkspace/Flutter%20Project/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-1.14.0",
       "packageUri": "lib/",
       "languageVersion": "2.16"
     },
@@ -81,19 +81,19 @@
     },
     {
       "name": "firebase_messaging",
-      "rootUri": "file:///Users/concettolabsmacbookair/RadhikaWorkspace/Flutter%20Project/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_messaging-11.2.11",
+      "rootUri": "file:///Users/concettolabsmacbookair/RadhikaWorkspace/Flutter%20Project/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_messaging-11.2.12",
       "packageUri": "lib/",
       "languageVersion": "2.16"
     },
     {
       "name": "firebase_messaging_platform_interface",
-      "rootUri": "file:///Users/concettolabsmacbookair/RadhikaWorkspace/Flutter%20Project/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_messaging_platform_interface-3.2.1",
+      "rootUri": "file:///Users/concettolabsmacbookair/RadhikaWorkspace/Flutter%20Project/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_messaging_platform_interface-3.2.2",
       "packageUri": "lib/",
       "languageVersion": "2.16"
     },
     {
       "name": "firebase_messaging_web",
-      "rootUri": "file:///Users/concettolabsmacbookair/RadhikaWorkspace/Flutter%20Project/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_messaging_web-2.2.9",
+      "rootUri": "file:///Users/concettolabsmacbookair/RadhikaWorkspace/Flutter%20Project/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_messaging_web-2.2.10",
       "packageUri": "lib/",
       "languageVersion": "2.16"
     },
@@ -242,7 +242,7 @@
       "languageVersion": "2.15"
     }
   ],
-  "generated": "2022-04-12T06:44:50.935396Z",
+  "generated": "2022-04-13T09:17:48.396768Z",
   "generator": "pub",
   "generatorVersion": "2.16.2"
 }
