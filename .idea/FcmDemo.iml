@@ -30,6 +30,18 @@
       <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/awesome_notifications/example/build" />
       <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/awesome_notifications/example/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/awesome_notifications/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/connectycube_flutter_call_kit/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/connectycube_flutter_call_kit/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/connectycube_flutter_call_kit/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/connectycube_flutter_call_kit/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/connectycube_flutter_call_kit/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/connectycube_flutter_call_kit/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/flutter_ios_voip_kit/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/flutter_ios_voip_kit/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/flutter_ios_voip_kit/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/flutter_ios_voip_kit/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/flutter_ios_voip_kit/build" />
+      <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/flutter_ios_voip_kit/.pub" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

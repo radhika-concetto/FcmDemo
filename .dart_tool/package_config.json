@@ -110,6 +110,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "flutter_ios_voip_kit",
+      "rootUri": "file:///Users/concettolabsmacbookair/RadhikaWorkspace/Flutter%20Project/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_ios_voip_kit-0.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.7"
+    },
+    {
       "name": "flutter_lints",
       "rootUri": "file:///Users/concettolabsmacbookair/RadhikaWorkspace/Flutter%20Project/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_lints-1.0.4",
       "packageUri": "lib/",
@@ -242,7 +248,7 @@
       "languageVersion": "2.15"
     }
   ],
-  "generated": "2022-04-15T06:54:31.155385Z",
+  "generated": "2022-04-28T12:48:14.354701Z",
   "generator": "pub",
   "generatorVersion": "2.16.2"
 }

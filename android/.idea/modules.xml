@@ -5,9 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/android.iml" filepath="$PROJECT_DIR$/.idea/modules/android.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/android.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/android.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/1868287186/android.connectycube_flutter_call_kit.iml" filepath="$PROJECT_DIR$/.idea/modules/1868287186/android.connectycube_flutter_call_kit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1636194404/android.firebase_core.iml" filepath="$PROJECT_DIR$/.idea/modules/1636194404/android.firebase_core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-444102314/android.firebase_messaging.iml" filepath="$PROJECT_DIR$/.idea/modules/-444102314/android.firebase_messaging.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1872275481/android.flutter_app_badger.iml" filepath="$PROJECT_DIR$/.idea/modules/-1872275481/android.flutter_app_badger.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1636194404/io.flutter.plugins.firebase.core.android.firebase_core.iml" filepath="$PROJECT_DIR$/.idea/modules/1636194404/io.flutter.plugins.firebase.core.android.firebase_core.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-444102314/io.flutter.plugins.firebasemessaging.android.firebase_messaging.iml" filepath="$PROJECT_DIR$/.idea/modules/-444102314/io.flutter.plugins.firebasemessaging.android.firebase_messaging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-988230140/android.flutter_ios_voip_kit.iml" filepath="$PROJECT_DIR$/.idea/modules/-988230140/android.flutter_ios_voip_kit.iml" />
     </modules>
   </component>
 </project>

@@ -106,292 +106,296 @@
 57            android:showWhenLocked="true"
 58            android:theme="@style/LaunchTheme"
 59            android:windowSoftInputMode="adjustResize" >
-60
-61            <!--
-62                 Specifies an Android theme to apply to this Activity as soon as
-63                 the Android process has started. This theme is visible to the user
-64                 while the Flutter UI initializes. After that, this theme continues
-65                 to determine the Window background behind the Flutter UI.
-66            -->
-67            <meta-data
-68                android:name="io.flutter.embedding.android.NormalTheme"
-69                android:resource="@style/NormalTheme" />
-70
-71            <intent-filter>
-72                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
-73
-74                <category android:name="android.intent.category.DEFAULT" />
-75            </intent-filter>
-76            <intent-filter>
-77                <action android:name="android.intent.action.MAIN" />
-78
-79                <category android:name="android.intent.category.LAUNCHER" />
-80            </intent-filter>
-81        </activity>
-82        <!--
-83             Don't delete the meta-data below.
-84             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-85        -->
-86        <meta-data
-87            android:name="flutterEmbedding"
-88            android:value="2" />
-89        <meta-data
-90            android:name="com.google.firebase.messaging.default_notification_channel_id"
-91            android:value="high_importance_channel" />
-92
-93        <service
-93-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-15:72
-94            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
-94-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-107
-95            android:exported="false"
-95-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
-96            android:permission="android.permission.BIND_JOB_SERVICE" />
-96-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-69
+60            <intent-filter>
+61                <action android:name=".MainActivity" />
+62
+63                <category android:name="android.intent.category.DEFAULT" />
+64            </intent-filter>
+65            <!--
+66                 Specifies an Android theme to apply to this Activity as soon as
+67                 the Android process has started. This theme is visible to the user
+68                 while the Flutter UI initializes. After that, this theme continues
+69                 to determine the Window background behind the Flutter UI.
+70            -->
+71            <meta-data
+72                android:name="io.flutter.embedding.android.NormalTheme"
+73                android:resource="@style/NormalTheme" />
+74
+75            <intent-filter>
+76                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+77
+78                <category android:name="android.intent.category.DEFAULT" />
+79            </intent-filter>
+80            <intent-filter>
+81                <action android:name="android.intent.action.MAIN" />
+82
+83                <category android:name="android.intent.category.LAUNCHER" />
+84            </intent-filter>
+85        </activity>
+86        <!--
+87             Don't delete the meta-data below.
+88             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+89        -->
+90        <meta-data
+91            android:name="flutterEmbedding"
+92            android:value="2" />
+93        <meta-data
+94            android:name="com.google.firebase.messaging.default_notification_channel_id"
+95            android:value="high_importance_channel" />
+96
 97        <service
-97-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-22:19
-98            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
-98-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-97
-99            android:exported="false" >
-99-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
-100            <intent-filter>
-100-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-21:29
-101                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-101-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-78
-101-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-75
-102            </intent-filter>
-103        </service>
-104
-105        <receiver
-105-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:24:9-31:20
-106            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
-106-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-98
-107            android:exported="true"
-107-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-36
-108            android:permission="com.google.android.c2dm.permission.SEND" >
-108-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-73
-109            <intent-filter>
-109-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-30:29
-110                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-110-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-81
-110-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:25-78
-111            </intent-filter>
-112        </receiver>
-113
-114        <service
-114-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:33:9-37:19
-115            android:name="com.google.firebase.components.ComponentDiscoveryService"
-115-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:33:18-89
-116            android:directBootAware="true"
-116-->[com.google.firebase:firebase-common:20.1.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/62b72c63d0f0a017e278c65b715c5aad/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:35:13-43
-117            android:exported="false" >
-117-->[com.google.firebase:firebase-messaging-ktx:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/8d2aaef3173830649ade0d5ccd209043/transformed/jetified-firebase-messaging-ktx-23.0.2/AndroidManifest.xml:28:13-37
-118            <meta-data
-118-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:34:13-36:85
-119                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
-119-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:35:17-128
-120                android:value="com.google.firebase.components.ComponentRegistrar" />
-120-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:36:17-82
-121            <meta-data
-121-->[:firebase_core] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
-122                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-122-->[:firebase_core] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
-123                android:value="com.google.firebase.components.ComponentRegistrar" />
-123-->[:firebase_core] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
-124            <meta-data
-124-->[com.google.firebase:firebase-messaging-ktx:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/8d2aaef3173830649ade0d5ccd209043/transformed/jetified-firebase-messaging-ktx-23.0.2/AndroidManifest.xml:29:13-31:85
-125                android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingKtxRegistrar"
-125-->[com.google.firebase:firebase-messaging-ktx:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/8d2aaef3173830649ade0d5ccd209043/transformed/jetified-firebase-messaging-ktx-23.0.2/AndroidManifest.xml:30:17-126
-126                android:value="com.google.firebase.components.ComponentRegistrar" />
-126-->[com.google.firebase:firebase-messaging-ktx:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/8d2aaef3173830649ade0d5ccd209043/transformed/jetified-firebase-messaging-ktx-23.0.2/AndroidManifest.xml:31:17-82
-127            <meta-data
-127-->[com.google.firebase:firebase-common-ktx:20.1.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/350fb1dbdcd977b9f200c42bd4e586f8/transformed/jetified-firebase-common-ktx-20.1.0/AndroidManifest.xml:15:13-17:85
-128                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
-128-->[com.google.firebase:firebase-common-ktx:20.1.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/350fb1dbdcd977b9f200c42bd4e586f8/transformed/jetified-firebase-common-ktx-20.1.0/AndroidManifest.xml:16:17-113
-129                android:value="com.google.firebase.components.ComponentRegistrar" />
-129-->[com.google.firebase:firebase-common-ktx:20.1.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/350fb1dbdcd977b9f200c42bd4e586f8/transformed/jetified-firebase-common-ktx-20.1.0/AndroidManifest.xml:17:17-82
-130            <meta-data
-130-->[com.google.firebase:firebase-messaging:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/4402814e537985d2bf381f9d527b4034/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:55:13-57:85
-131                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-131-->[com.google.firebase:firebase-messaging:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/4402814e537985d2bf381f9d527b4034/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:56:17-119
-132                android:value="com.google.firebase.components.ComponentRegistrar" />
-132-->[com.google.firebase:firebase-messaging:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/4402814e537985d2bf381f9d527b4034/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:57:17-82
-133            <meta-data
-133-->[com.google.firebase:firebase-datatransport:18.1.1] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/d13f8977e29221ecc19ed69b1ce43d5f/transformed/jetified-firebase-datatransport-18.1.1/AndroidManifest.xml:28:13-30:85
-134                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-134-->[com.google.firebase:firebase-datatransport:18.1.1] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/d13f8977e29221ecc19ed69b1ce43d5f/transformed/jetified-firebase-datatransport-18.1.1/AndroidManifest.xml:29:17-115
-135                android:value="com.google.firebase.components.ComponentRegistrar" />
-135-->[com.google.firebase:firebase-datatransport:18.1.1] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/d13f8977e29221ecc19ed69b1ce43d5f/transformed/jetified-firebase-datatransport-18.1.1/AndroidManifest.xml:30:17-82
-136            <meta-data
-136-->[com.google.firebase:firebase-installations:17.0.1] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/b786817de6864944aee972b89c754528/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:18:13-20:85
-137                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-137-->[com.google.firebase:firebase-installations:17.0.1] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/b786817de6864944aee972b89c754528/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:19:17-127
-138                android:value="com.google.firebase.components.ComponentRegistrar" />
-138-->[com.google.firebase:firebase-installations:17.0.1] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/b786817de6864944aee972b89c754528/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:20:17-82
-139        </service>
-140
-141        <provider
-141-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:39:9-43:38
-142            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
-142-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-102
-143            android:authorities="com.concettolabs.testapp.flutterfirebasemessaginginitprovider"
-143-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-88
-144            android:exported="false"
-144-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:42:13-37
-145            android:initOrder="99" />
-145-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:43:13-35
-146
-147        <receiver android:name="com.connectycube.flutter.connectycube_flutter_call_kit.EventReceiver" />
-147-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-105
-147-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:13:19-102
-148
-149        <activity
-149-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:15:9-24:43
-150            android:name="com.connectycube.flutter.connectycube_flutter_call_kit.IncomingCallActivity"
-150-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-103
-151            android:excludeFromRecents="true"
-151-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-46
-152            android:noHistory="true"
-152-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
-153            android:screenOrientation="sensorPortrait"
-153-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-55
-154            android:showOnLockScreen="true"
-154-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-44
-155            android:showWhenLocked="true"
-155-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-42
-156            android:taskAffinity="com.connectycube.flutter.connectycube_flutter_call_kit.INCOMING_CALL_AFFINITY"
-156-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-113
-157            android:theme="@android:style/Theme.Holo.NoActionBar"
-157-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-66
-158            android:turnScreenOn="true" />
-158-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-40
-159
-160        <service
-160-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:26:9-29:72
-161            android:name="com.connectycube.flutter.connectycube_flutter_call_kit.background_isolates.ConnectycubeFlutterBgPerformingService"
-161-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-141
-162            android:exported="false"
-162-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-37
-163            android:permission="android.permission.BIND_JOB_SERVICE" />
-163-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-69
+97-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-15:72
+98            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+98-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-107
+99            android:exported="false"
+99-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+100            android:permission="android.permission.BIND_JOB_SERVICE" />
+100-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-69
+101        <service
+101-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-22:19
+102            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+102-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-97
+103            android:exported="false" >
+103-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+104            <intent-filter>
+104-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-21:29
+105                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+105-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-78
+105-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-75
+106            </intent-filter>
+107        </service>
+108
+109        <receiver
+109-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:24:9-31:20
+110            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+110-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-98
+111            android:exported="true"
+111-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-36
+112            android:permission="com.google.android.c2dm.permission.SEND" >
+112-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-73
+113            <intent-filter>
+113-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-30:29
+114                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+114-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-81
+114-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:25-78
+115            </intent-filter>
+116        </receiver>
+117
+118        <service
+118-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:33:9-37:19
+119            android:name="com.google.firebase.components.ComponentDiscoveryService"
+119-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:33:18-89
+120            android:directBootAware="true"
+120-->[com.google.firebase:firebase-common:20.1.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/62b72c63d0f0a017e278c65b715c5aad/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:35:13-43
+121            android:exported="false" >
+121-->[com.google.firebase:firebase-messaging-ktx:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/8d2aaef3173830649ade0d5ccd209043/transformed/jetified-firebase-messaging-ktx-23.0.2/AndroidManifest.xml:28:13-37
+122            <meta-data
+122-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:34:13-36:85
+123                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+123-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:35:17-128
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:36:17-82
+125            <meta-data
+125-->[:firebase_core] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+126                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+126-->[:firebase_core] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[:firebase_core] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+128            <meta-data
+128-->[com.google.firebase:firebase-messaging-ktx:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/8d2aaef3173830649ade0d5ccd209043/transformed/jetified-firebase-messaging-ktx-23.0.2/AndroidManifest.xml:29:13-31:85
+129                android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingKtxRegistrar"
+129-->[com.google.firebase:firebase-messaging-ktx:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/8d2aaef3173830649ade0d5ccd209043/transformed/jetified-firebase-messaging-ktx-23.0.2/AndroidManifest.xml:30:17-126
+130                android:value="com.google.firebase.components.ComponentRegistrar" />
+130-->[com.google.firebase:firebase-messaging-ktx:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/8d2aaef3173830649ade0d5ccd209043/transformed/jetified-firebase-messaging-ktx-23.0.2/AndroidManifest.xml:31:17-82
+131            <meta-data
+131-->[com.google.firebase:firebase-common-ktx:20.1.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/350fb1dbdcd977b9f200c42bd4e586f8/transformed/jetified-firebase-common-ktx-20.1.0/AndroidManifest.xml:15:13-17:85
+132                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+132-->[com.google.firebase:firebase-common-ktx:20.1.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/350fb1dbdcd977b9f200c42bd4e586f8/transformed/jetified-firebase-common-ktx-20.1.0/AndroidManifest.xml:16:17-113
+133                android:value="com.google.firebase.components.ComponentRegistrar" />
+133-->[com.google.firebase:firebase-common-ktx:20.1.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/350fb1dbdcd977b9f200c42bd4e586f8/transformed/jetified-firebase-common-ktx-20.1.0/AndroidManifest.xml:17:17-82
+134            <meta-data
+134-->[com.google.firebase:firebase-messaging:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/4402814e537985d2bf381f9d527b4034/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:55:13-57:85
+135                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+135-->[com.google.firebase:firebase-messaging:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/4402814e537985d2bf381f9d527b4034/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:56:17-119
+136                android:value="com.google.firebase.components.ComponentRegistrar" />
+136-->[com.google.firebase:firebase-messaging:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/4402814e537985d2bf381f9d527b4034/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:57:17-82
+137            <meta-data
+137-->[com.google.firebase:firebase-datatransport:18.1.1] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/d13f8977e29221ecc19ed69b1ce43d5f/transformed/jetified-firebase-datatransport-18.1.1/AndroidManifest.xml:28:13-30:85
+138                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+138-->[com.google.firebase:firebase-datatransport:18.1.1] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/d13f8977e29221ecc19ed69b1ce43d5f/transformed/jetified-firebase-datatransport-18.1.1/AndroidManifest.xml:29:17-115
+139                android:value="com.google.firebase.components.ComponentRegistrar" />
+139-->[com.google.firebase:firebase-datatransport:18.1.1] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/d13f8977e29221ecc19ed69b1ce43d5f/transformed/jetified-firebase-datatransport-18.1.1/AndroidManifest.xml:30:17-82
+140            <meta-data
+140-->[com.google.firebase:firebase-installations:17.0.1] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/b786817de6864944aee972b89c754528/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:18:13-20:85
+141                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+141-->[com.google.firebase:firebase-installations:17.0.1] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/b786817de6864944aee972b89c754528/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:19:17-127
+142                android:value="com.google.firebase.components.ComponentRegistrar" />
+142-->[com.google.firebase:firebase-installations:17.0.1] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/b786817de6864944aee972b89c754528/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:20:17-82
+143        </service>
+144
+145        <provider
+145-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:39:9-43:38
+146            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+146-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:40:13-102
+147            android:authorities="com.concettolabs.testapp.flutterfirebasemessaginginitprovider"
+147-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:41:13-88
+148            android:exported="false"
+148-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:42:13-37
+149            android:initOrder="99" />
+149-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:43:13-35
+150
+151        <receiver android:name="com.connectycube.flutter.connectycube_flutter_call_kit.EventReceiver" />
+151-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-105
+151-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:13:19-102
+152
+153        <activity
+153-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:15:9-24:43
+154            android:name="com.connectycube.flutter.connectycube_flutter_call_kit.IncomingCallActivity"
+154-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-103
+155            android:excludeFromRecents="true"
+155-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-46
+156            android:noHistory="true"
+156-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+157            android:screenOrientation="sensorPortrait"
+157-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-55
+158            android:showOnLockScreen="true"
+158-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-44
+159            android:showWhenLocked="true"
+159-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-42
+160            android:taskAffinity="com.connectycube.flutter.connectycube_flutter_call_kit.INCOMING_CALL_AFFINITY"
+160-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-113
+161            android:theme="@android:style/Theme.Holo.NoActionBar"
+161-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-66
+162            android:turnScreenOn="true" />
+162-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-40
+163
 164        <service
-164-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:30:9-36:19
-165            android:name="com.connectycube.flutter.connectycube_flutter_call_kit.ConnectycubeFCMService"
-165-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:31:13-105
-166            android:exported="false" >
-166-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:32:13-37
-167            <intent-filter>
-167-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-21:29
-168                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-168-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-78
-168-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-75
-169            </intent-filter>
-170        </service>
-171
-172        <uses-library
-172-->[androidx.window:window:1.0.0-beta04] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/7c41f29386a33811fdb6722c4fa19fd8/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
-173            android:name="androidx.window.extensions"
-173-->[androidx.window:window:1.0.0-beta04] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/7c41f29386a33811fdb6722c4fa19fd8/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
-174            android:required="false" />
-174-->[androidx.window:window:1.0.0-beta04] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/7c41f29386a33811fdb6722c4fa19fd8/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
-175        <uses-library
-175-->[androidx.window:window:1.0.0-beta04] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/7c41f29386a33811fdb6722c4fa19fd8/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
-176            android:name="androidx.window.sidecar"
-176-->[androidx.window:window:1.0.0-beta04] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/7c41f29386a33811fdb6722c4fa19fd8/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
-177            android:required="false" />
-177-->[androidx.window:window:1.0.0-beta04] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/7c41f29386a33811fdb6722c4fa19fd8/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
-178
-179        <receiver
-179-->[com.google.firebase:firebase-messaging:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/4402814e537985d2bf381f9d527b4034/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:31:9-38:20
-180            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-180-->[com.google.firebase:firebase-messaging:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/4402814e537985d2bf381f9d527b4034/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:32:13-78
-181            android:exported="true"
-181-->[com.google.firebase:firebase-messaging:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/4402814e537985d2bf381f9d527b4034/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:33:13-36
-182            android:permission="com.google.android.c2dm.permission.SEND" >
-182-->[com.google.firebase:firebase-messaging:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/4402814e537985d2bf381f9d527b4034/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:34:13-73
-183            <intent-filter>
-183-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-30:29
-184                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-184-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-81
-184-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:25-78
-185            </intent-filter>
-186        </receiver>
-187        <!--
-188             FirebaseMessagingService performs security checks at runtime,
-189             but set to not exported to explicitly avoid allowing another app to call it.
-190        -->
-191        <service
-191-->[com.google.firebase:firebase-messaging:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/4402814e537985d2bf381f9d527b4034/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:44:9-51:19
-192            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-192-->[com.google.firebase:firebase-messaging:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/4402814e537985d2bf381f9d527b4034/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:45:13-82
-193            android:directBootAware="true"
-193-->[com.google.firebase:firebase-messaging:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/4402814e537985d2bf381f9d527b4034/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:46:13-43
-194            android:exported="false" >
-194-->[com.google.firebase:firebase-messaging:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/4402814e537985d2bf381f9d527b4034/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:47:13-37
-195            <intent-filter android:priority="-500" >
-195-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-21:29
-196                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-196-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-78
-196-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-75
-197            </intent-filter>
-198        </service>
-199        <service
-199-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/c86ba253c5847321ae82fad7c35a988e/transformed/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:29:9-35:19
-200            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-200-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/c86ba253c5847321ae82fad7c35a988e/transformed/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:30:13-103
-201            android:exported="false" >
-201-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/c86ba253c5847321ae82fad7c35a988e/transformed/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:31:13-37
-202            <meta-data
-202-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/c86ba253c5847321ae82fad7c35a988e/transformed/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:32:13-34:39
-203                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-203-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/c86ba253c5847321ae82fad7c35a988e/transformed/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:33:17-94
-204                android:value="cct" />
-204-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/c86ba253c5847321ae82fad7c35a988e/transformed/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:34:17-36
-205        </service>
-206        <service
-206-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/9b1fd34cb59ccea4ea0e7d854b6437b8/transformed/jetified-transport-runtime-3.1.2/AndroidManifest.xml:26:9-30:19
-207            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-207-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/9b1fd34cb59ccea4ea0e7d854b6437b8/transformed/jetified-transport-runtime-3.1.2/AndroidManifest.xml:27:13-117
-208            android:exported="false"
-208-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/9b1fd34cb59ccea4ea0e7d854b6437b8/transformed/jetified-transport-runtime-3.1.2/AndroidManifest.xml:28:13-37
-209            android:permission="android.permission.BIND_JOB_SERVICE" >
-209-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/9b1fd34cb59ccea4ea0e7d854b6437b8/transformed/jetified-transport-runtime-3.1.2/AndroidManifest.xml:29:13-69
-210        </service>
-211
-212        <receiver
-212-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/9b1fd34cb59ccea4ea0e7d854b6437b8/transformed/jetified-transport-runtime-3.1.2/AndroidManifest.xml:32:9-34:40
-213            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-213-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/9b1fd34cb59ccea4ea0e7d854b6437b8/transformed/jetified-transport-runtime-3.1.2/AndroidManifest.xml:33:13-132
-214            android:exported="false" />
-214-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/9b1fd34cb59ccea4ea0e7d854b6437b8/transformed/jetified-transport-runtime-3.1.2/AndroidManifest.xml:34:13-37
+164-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:26:9-29:72
+165            android:name="com.connectycube.flutter.connectycube_flutter_call_kit.background_isolates.ConnectycubeFlutterBgPerformingService"
+165-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-141
+166            android:exported="true"
+166-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-36
+167            android:permission="android.permission.BIND_JOB_SERVICE" />
+167-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-69
+168        <service
+168-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:30:9-36:19
+169            android:name="com.connectycube.flutter.connectycube_flutter_call_kit.ConnectycubeFCMService"
+169-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:31:13-105
+170            android:exported="true" >
+170-->[:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:32:13-36
+171            <intent-filter>
+171-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-21:29
+172                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+172-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-78
+172-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-75
+173            </intent-filter>
+174        </service>
+175
+176        <uses-library
+176-->[androidx.window:window:1.0.0-beta04] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/7c41f29386a33811fdb6722c4fa19fd8/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+177            android:name="androidx.window.extensions"
+177-->[androidx.window:window:1.0.0-beta04] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/7c41f29386a33811fdb6722c4fa19fd8/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+178            android:required="false" />
+178-->[androidx.window:window:1.0.0-beta04] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/7c41f29386a33811fdb6722c4fa19fd8/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+179        <uses-library
+179-->[androidx.window:window:1.0.0-beta04] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/7c41f29386a33811fdb6722c4fa19fd8/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+180            android:name="androidx.window.sidecar"
+180-->[androidx.window:window:1.0.0-beta04] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/7c41f29386a33811fdb6722c4fa19fd8/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+181            android:required="false" />
+181-->[androidx.window:window:1.0.0-beta04] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/7c41f29386a33811fdb6722c4fa19fd8/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+182
+183        <receiver
+183-->[com.google.firebase:firebase-messaging:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/4402814e537985d2bf381f9d527b4034/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:31:9-38:20
+184            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+184-->[com.google.firebase:firebase-messaging:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/4402814e537985d2bf381f9d527b4034/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:32:13-78
+185            android:exported="true"
+185-->[com.google.firebase:firebase-messaging:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/4402814e537985d2bf381f9d527b4034/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:33:13-36
+186            android:permission="com.google.android.c2dm.permission.SEND" >
+186-->[com.google.firebase:firebase-messaging:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/4402814e537985d2bf381f9d527b4034/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:34:13-73
+187            <intent-filter>
+187-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-30:29
+188                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+188-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-81
+188-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:29:25-78
+189            </intent-filter>
+190        </receiver>
+191        <!--
+192             FirebaseMessagingService performs security checks at runtime,
+193             but set to not exported to explicitly avoid allowing another app to call it.
+194        -->
+195        <service
+195-->[com.google.firebase:firebase-messaging:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/4402814e537985d2bf381f9d527b4034/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:44:9-51:19
+196            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+196-->[com.google.firebase:firebase-messaging:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/4402814e537985d2bf381f9d527b4034/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:45:13-82
+197            android:directBootAware="true"
+197-->[com.google.firebase:firebase-messaging:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/4402814e537985d2bf381f9d527b4034/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:46:13-43
+198            android:exported="false" >
+198-->[com.google.firebase:firebase-messaging:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/4402814e537985d2bf381f9d527b4034/transformed/jetified-firebase-messaging-23.0.2/AndroidManifest.xml:47:13-37
+199            <intent-filter android:priority="-500" >
+199-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-21:29
+200                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+200-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-78
+200-->[:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-75
+201            </intent-filter>
+202        </service>
+203        <service
+203-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/c86ba253c5847321ae82fad7c35a988e/transformed/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:29:9-35:19
+204            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+204-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/c86ba253c5847321ae82fad7c35a988e/transformed/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:30:13-103
+205            android:exported="false" >
+205-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/c86ba253c5847321ae82fad7c35a988e/transformed/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:31:13-37
+206            <meta-data
+206-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/c86ba253c5847321ae82fad7c35a988e/transformed/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:32:13-34:39
+207                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+207-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/c86ba253c5847321ae82fad7c35a988e/transformed/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:33:17-94
+208                android:value="cct" />
+208-->[com.google.android.datatransport:transport-backend-cct:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/c86ba253c5847321ae82fad7c35a988e/transformed/jetified-transport-backend-cct-3.1.2/AndroidManifest.xml:34:17-36
+209        </service>
+210        <service
+210-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/9b1fd34cb59ccea4ea0e7d854b6437b8/transformed/jetified-transport-runtime-3.1.2/AndroidManifest.xml:26:9-30:19
+211            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+211-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/9b1fd34cb59ccea4ea0e7d854b6437b8/transformed/jetified-transport-runtime-3.1.2/AndroidManifest.xml:27:13-117
+212            android:exported="false"
+212-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/9b1fd34cb59ccea4ea0e7d854b6437b8/transformed/jetified-transport-runtime-3.1.2/AndroidManifest.xml:28:13-37
+213            android:permission="android.permission.BIND_JOB_SERVICE" >
+213-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/9b1fd34cb59ccea4ea0e7d854b6437b8/transformed/jetified-transport-runtime-3.1.2/AndroidManifest.xml:29:13-69
+214        </service>
 215
-216        <provider
-216-->[com.google.firebase:firebase-common:20.1.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/62b72c63d0f0a017e278c65b715c5aad/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:26:9-31:39
-217            android:name="com.google.firebase.provider.FirebaseInitProvider"
-217-->[com.google.firebase:firebase-common:20.1.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/62b72c63d0f0a017e278c65b715c5aad/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:27:13-77
-218            android:authorities="com.concettolabs.testapp.firebaseinitprovider"
-218-->[com.google.firebase:firebase-common:20.1.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/62b72c63d0f0a017e278c65b715c5aad/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:28:13-72
-219            android:directBootAware="true"
-219-->[com.google.firebase:firebase-common:20.1.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/62b72c63d0f0a017e278c65b715c5aad/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:29:13-43
-220            android:exported="false"
-220-->[com.google.firebase:firebase-common:20.1.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/62b72c63d0f0a017e278c65b715c5aad/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:30:13-37
-221            android:initOrder="100" />
-221-->[com.google.firebase:firebase-common:20.1.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/62b72c63d0f0a017e278c65b715c5aad/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:31:13-36
-222
-223        <activity
-223-->[com.google.android.gms:play-services-base:18.0.1] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/08680e1300312e747a532d0e4d159833/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
-224            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-224-->[com.google.android.gms:play-services-base:18.0.1] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/08680e1300312e747a532d0e4d159833/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
-225            android:exported="false"
-225-->[com.google.android.gms:play-services-base:18.0.1] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/08680e1300312e747a532d0e4d159833/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
-226            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-226-->[com.google.android.gms:play-services-base:18.0.1] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/08680e1300312e747a532d0e4d159833/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
-227
-228        <meta-data
-228-->[com.google.android.gms:play-services-basement:18.0.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/a4f9f327d23e944b53e1762369cd207e/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
-229            android:name="com.google.android.gms.version"
-229-->[com.google.android.gms:play-services-basement:18.0.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/a4f9f327d23e944b53e1762369cd207e/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
-230            android:value="@integer/google_play_services_version" />
-230-->[com.google.android.gms:play-services-basement:18.0.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/a4f9f327d23e944b53e1762369cd207e/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
-231    </application>
-232
-233</manifest>
+216        <receiver
+216-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/9b1fd34cb59ccea4ea0e7d854b6437b8/transformed/jetified-transport-runtime-3.1.2/AndroidManifest.xml:32:9-34:40
+217            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+217-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/9b1fd34cb59ccea4ea0e7d854b6437b8/transformed/jetified-transport-runtime-3.1.2/AndroidManifest.xml:33:13-132
+218            android:exported="false" />
+218-->[com.google.android.datatransport:transport-runtime:3.1.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/9b1fd34cb59ccea4ea0e7d854b6437b8/transformed/jetified-transport-runtime-3.1.2/AndroidManifest.xml:34:13-37
+219
+220        <provider
+220-->[com.google.firebase:firebase-common:20.1.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/62b72c63d0f0a017e278c65b715c5aad/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:26:9-31:39
+221            android:name="com.google.firebase.provider.FirebaseInitProvider"
+221-->[com.google.firebase:firebase-common:20.1.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/62b72c63d0f0a017e278c65b715c5aad/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:27:13-77
+222            android:authorities="com.concettolabs.testapp.firebaseinitprovider"
+222-->[com.google.firebase:firebase-common:20.1.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/62b72c63d0f0a017e278c65b715c5aad/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:28:13-72
+223            android:directBootAware="true"
+223-->[com.google.firebase:firebase-common:20.1.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/62b72c63d0f0a017e278c65b715c5aad/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:29:13-43
+224            android:exported="false"
+224-->[com.google.firebase:firebase-common:20.1.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/62b72c63d0f0a017e278c65b715c5aad/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:30:13-37
+225            android:initOrder="100" />
+225-->[com.google.firebase:firebase-common:20.1.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/62b72c63d0f0a017e278c65b715c5aad/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:31:13-36
+226
+227        <activity
+227-->[com.google.android.gms:play-services-base:18.0.1] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/08680e1300312e747a532d0e4d159833/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+228            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+228-->[com.google.android.gms:play-services-base:18.0.1] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/08680e1300312e747a532d0e4d159833/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+229            android:exported="false"
+229-->[com.google.android.gms:play-services-base:18.0.1] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/08680e1300312e747a532d0e4d159833/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+230            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+230-->[com.google.android.gms:play-services-base:18.0.1] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/08680e1300312e747a532d0e4d159833/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+231
+232        <meta-data
+232-->[com.google.android.gms:play-services-basement:18.0.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/a4f9f327d23e944b53e1762369cd207e/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+233            android:name="com.google.android.gms.version"
+233-->[com.google.android.gms:play-services-basement:18.0.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/a4f9f327d23e944b53e1762369cd207e/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+234            android:value="@integer/google_play_services_version" />
+234-->[com.google.android.gms:play-services-basement:18.0.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/a4f9f327d23e944b53e1762369cd207e/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+235    </application>
+236
+237</manifest>

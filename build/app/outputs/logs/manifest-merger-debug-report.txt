@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 application
-INJECTED from /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/android/app/src/main/AndroidManifest.xml:5:4-46:19
+INJECTED from /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/android/app/src/main/AndroidManifest.xml:5:4-52:19
 MERGED from [:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-44:19
 MERGED from [:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-44:19
 MERGED from [:firebase_core] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
@@ -46,14 +46,15 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/conc
 	android:name
 		INJECTED from /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/android/app/src/main/AndroidManifest.xml
 manifest
-ADDED from /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/android/app/src/main/AndroidManifest.xml:1:1-47:12
-INJECTED from /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/android/app/src/main/AndroidManifest.xml:1:1-47:12
-INJECTED from /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/android/app/src/main/AndroidManifest.xml:1:1-47:12
-INJECTED from /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/android/app/src/main/AndroidManifest.xml:1:1-47:12
-MERGED from /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/android/app/src/main/AndroidManifest.xml:1:1-47:12
+ADDED from /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/android/app/src/main/AndroidManifest.xml:1:1-53:12
+INJECTED from /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/android/app/src/main/AndroidManifest.xml:1:1-53:12
+INJECTED from /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/android/app/src/main/AndroidManifest.xml:1:1-53:12
+INJECTED from /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/android/app/src/main/AndroidManifest.xml:1:1-53:12
+MERGED from /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/android/app/src/main/AndroidManifest.xml:1:1-53:12
 MERGED from [:firebase_messaging] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_messaging/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-46:12
 MERGED from [:firebase_core] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [:flutter_app_badger] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/flutter_app_badger/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_ios_voip_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/flutter_ios_voip_kit/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-43:12
 MERGED from [com.google.firebase:firebase-messaging-ktx:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/8d2aaef3173830649ade0d5ccd209043/transformed/jetified-firebase-messaging-ktx-23.0.2/AndroidManifest.xml:17:1-35:12
 MERGED from [com.google.firebase:firebase-common-ktx:20.1.0] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/350fb1dbdcd977b9f200c42bd4e586f8/transformed/jetified-firebase-common-ktx-20.1.0/AndroidManifest.xml:2:1-21:12
@@ -105,11 +106,11 @@ INJECTED from /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/Fcm
 		INJECTED from /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/android/app/src/debug/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/android/app/src/main/AndroidManifest.xml:1:1-47:12
+		ADDED from /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/android/app/src/main/AndroidManifest.xml:1:1-53:12
 		INJECTED from /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/android/app/src/main/AndroidManifest.xml:1:1-47:12
+		ADDED from /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/android/app/src/main/AndroidManifest.xml:1:1-53:12
 		INJECTED from /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/android/app/src/main/AndroidManifest.xml:1:11-69
@@ -133,6 +134,8 @@ MERGED from [:firebase_core] /Users/concettolabsmacbookair/RadhikaWorkspace/Flut
 MERGED from [:firebase_core] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:flutter_app_badger] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/flutter_app_badger/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:flutter_app_badger] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/flutter_app_badger/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_ios_voip_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/flutter_ios_voip_kit/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_ios_voip_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/flutter_ios_voip_kit/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-messaging-ktx:23.0.2] /Users/concettolabsmacbookair/.gradle/caches/transforms-3/8d2aaef3173830649ade0d5ccd209043/transformed/jetified-firebase-messaging-ktx-23.0.2/AndroidManifest.xml:21:5-23:41
@@ -374,7 +377,7 @@ ADDED from [:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/Radhik
 service#com.connectycube.flutter.connectycube_flutter_call_kit.background_isolates.ConnectycubeFlutterBgPerformingService
 ADDED from [:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:26:9-29:72
 	android:exported
-		ADDED from [:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-37
+		ADDED from [:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-36
 	android:permission
 		ADDED from [:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-69
 	android:name
@@ -382,7 +385,7 @@ ADDED from [:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/Radhik
 service#com.connectycube.flutter.connectycube_flutter_call_kit.ConnectycubeFCMService
 ADDED from [:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:30:9-36:19
 	android:exported
-		ADDED from [:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:32:13-37
+		ADDED from [:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:32:13-36
 	android:name
 		ADDED from [:connectycube_flutter_call_kit] /Users/concettolabsmacbookair/RadhikaWorkspace/Flutter Project/FcmDemo/build/connectycube_flutter_call_kit/intermediates/library_manifest/debug/AndroidManifest.xml:31:13-105
 meta-data#com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingKtxRegistrar

@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:fcm_demo/model/PushNotificationNew.dart';
 import 'package:fcm_demo/ui/Accept_call_screen.dart';
 import 'package:fcm_demo/ui/Reject_call_screen.dart';
@@ -5,8 +7,11 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:connectycube_flutter_call_kit/connectycube_flutter_call_kit.dart';
+import 'package:flutter_ios_voip_kit/flutter_ios_voip_kit.dart';
 
 import 'package:overlay_support/overlay_support.dart';
+
+const String sessionId = "6A967474-8672-4ABC-A57B-52EA809C5E6D";
 
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
   await Firebase.initializeApp();
@@ -14,7 +19,7 @@ Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
 
   print("Notification ${message.data["caller_name"]}");
   CallEvent callEvent = CallEvent(
-      sessionId: DateTime.now().millisecondsSinceEpoch.toString(),
+      sessionId: sessionId,
       callType: 1,
       callerId: 4,
       callerName: message.data["caller_name"],
@@ -25,8 +30,20 @@ Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
   await Firebase.initializeApp();
-  runApp(MyApp());
+  FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
+
+  // ConnectycubeFlutterCallKit.instance.updateConfig(
+  //     ringtone: 'custom_ringtone', icon: 'app_icon', color: '#07711e');
+  runZonedGuarded(() {
+    FlutterIOSVoIPKit.instance.onDidUpdatePushToken = (token) {
+      print('🎈 example: onDidUpdatePushToken token = $token');
+    };
+    runApp(MyApp());
+  }, (object, stackTrace) {
+    print('stacktrace $stackTrace');
+  });
 }
 
 class MyApp extends StatelessWidget {
@@ -51,6 +68,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  BuildContext? mContext;
   late final FirebaseMessaging _messaging;
   late int _totalNotifications;
   PushNotificationNew? _notificationInfo;
@@ -68,6 +86,8 @@ class _HomePageState extends State<HomePage> {
       sound: true,
     );
 
+    print("Token ${await _messaging.getToken()}");
+
     if (settings.authorizationStatus == AuthorizationStatus.authorized) {
       print('User granted permission');
 
@@ -83,14 +103,19 @@ class _HomePageState extends State<HomePage> {
 
   void showNotification(RemoteMessage message) {
     print("Notification ${message.data["caller_name"]}");
+    print("Time ${message.data["session_id"]}");
     CallEvent callEvent = CallEvent(
-        sessionId: DateTime.now().millisecondsSinceEpoch.toString(),
+        sessionId: sessionId,
         callType: 1,
         callerId: 4,
         callerName: message.data["caller_name"],
         opponentsIds: {5},
         userInfo: {'customParameter1': 'value1'});
     ConnectycubeFlutterCallKit.showCallNotification(callEvent);
+    // ConnectycubeFlutterCallKit.re(
+    //     sessionId: DateTime.now().millisecondsSinceEpoch.toString(),
+    //     callType: 1);
+    // ConnectycubeFlutterCallKit.reportCallEnded(sessionId: sessionId);
   }
 
   @override
@@ -98,15 +123,41 @@ class _HomePageState extends State<HomePage> {
     super.initState();
     _totalNotifications = 0;
 
+    WidgetsBinding.instance?.addPostFrameCallback((timeStamp) {
+      Future<void> _onCallAccepted(CallEvent callEvent) async {
+        Navigator.push(
+          mContext!,
+          MaterialPageRoute(
+            builder: (mContext) => const AcceptCallScreen(),
+          ),
+        );
+      }
+
+      Future<void> _onCallRejected(CallEvent callEvent) async {
+        Navigator.push(
+          mContext!,
+          MaterialPageRoute(
+            builder: (mContext) => const RejectCallScreen(),
+          ),
+        );
+      }
+
+      ConnectycubeFlutterCallKit.instance.init(
+          onCallAccepted: _onCallAccepted,
+          onCallRejected: _onCallRejected,
+          ringtone: "",
+          icon: "",
+          color: "");
+    });
     FirebaseMessaging.instance
         .getInitialMessage()
         .then((RemoteMessage? message) {
       if (message != null) {
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
           content: Text("Sending Message"),
         ));
         print(
-            'Message Initaltitle: ${message!.notification?.title}, body: ${message!.notification?.body}, data: ${message.data}');
+            'Message Initaltitle: ${message.notification?.title}, body: ${message.notification?.body}, data: ${message.data}');
 
         showNotification(message);
       }
@@ -115,7 +166,8 @@ class _HomePageState extends State<HomePage> {
 
     FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
       print(
-          'Message Opentitle: ${message!.notification?.title}, body: ${message!.notification?.body}, data: ${message.data}');
+          'Message Opentitle: ${message.notification?.title}, body: ${message.notification?.body}, data: ${message.data}');
+      showNotification(message);
     });
 
     ConnectycubeFlutterCallKit.getToken().then((token) {
@@ -127,43 +179,21 @@ class _HomePageState extends State<HomePage> {
       print("Refresh Token $token");
     };
 
-    Future<void> _onCallAccepted(CallEvent callEvent) async {
-      Navigator.push(
-        context!,
-        MaterialPageRoute(
-          builder: (context) => const AcceptCallScreen(),
-        ),
-      );
-    }
-
-    Future<void> _onCallRejected(CallEvent callEvent) async {
-      Navigator.push(
-        context!,
-        MaterialPageRoute(
-          builder: (context) => const RejectCallScreen(),
-        ),
-      );
-    }
-
-    ConnectycubeFlutterCallKit.instance.init(
-      onCallAccepted: _onCallAccepted,
-      onCallRejected: _onCallRejected,
-    );
-
     ConnectycubeFlutterCallKit.setOnLockScreenVisibility(isVisible: true);
   }
 
   @override
   Widget build(BuildContext context) {
+    mContext = context;
     return Scaffold(
       appBar: AppBar(
-        title: Text('Notify'),
+        title: const Text('Notify'),
         brightness: Brightness.dark,
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
+          const Text(
             'App for capturing Firebase Push Notifications',
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -171,24 +201,24 @@ class _HomePageState extends State<HomePage> {
               fontSize: 20,
             ),
           ),
-          SizedBox(height: 16.0),
+          const SizedBox(height: 16.0),
           // NotificationBadge(totalNotifications: _totalNotifications),
-          SizedBox(height: 16.0),
+          const SizedBox(height: 16.0),
           _notificationInfo != null
               ? Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       'TITLE: ${_notificationInfo!.dataTitle ?? _notificationInfo!.title}',
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 16.0,
                       ),
                     ),
-                    SizedBox(height: 8.0),
+                    const SizedBox(height: 8.0),
                     Text(
                       'BODY: ${_notificationInfo!.dataBody ?? _notificationInfo!.body}',
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 16.0,
                       ),
@@ -212,7 +242,7 @@ class NotificationBadge extends StatelessWidget {
     return Container(
       width: 40.0,
       height: 40.0,
-      decoration: new BoxDecoration(
+      decoration: const BoxDecoration(
         color: Colors.red,
         shape: BoxShape.circle,
       ),
@@ -221,7 +251,7 @@ class NotificationBadge extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: Text(
             '$totalNotifications',
-            style: TextStyle(color: Colors.white, fontSize: 20),
+            style: const TextStyle(color: Colors.white, fontSize: 20),
           ),
         ),
       ),

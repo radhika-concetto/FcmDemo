@@ -57,7 +57,11 @@
             android:showWhenLocked="true"
             android:theme="@style/LaunchTheme"
             android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name=".MainActivity" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
             <!--
                  Specifies an Android theme to apply to this Activity as soon as
                  the Android process has started. This theme is visible to the user
@@ -159,11 +163,11 @@
 
         <service
             android:name="com.connectycube.flutter.connectycube_flutter_call_kit.background_isolates.ConnectycubeFlutterBgPerformingService"
-            android:exported="false"
+            android:exported="true"
             android:permission="android.permission.BIND_JOB_SERVICE" />
         <service
             android:name="com.connectycube.flutter.connectycube_flutter_call_kit.ConnectycubeFCMService"
-            android:exported="false" >
+            android:exported="true" >
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
